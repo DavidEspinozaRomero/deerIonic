@@ -1,0 +1,7 @@
+{
+  "name": "deerhouIonic",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
