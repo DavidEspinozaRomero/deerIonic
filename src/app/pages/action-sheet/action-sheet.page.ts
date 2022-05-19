@@ -70,29 +70,29 @@ export class ActionSheetPage implements OnInit {
 }
 
 //#region Interfaces
-interface ActionSheetButton<T = any> {
-  text?: string;
-  role?: "cancel" | "destructive" | "selected" | string;
-  icon?: string;
-  cssClass?: string | string[];
-  handler?: () => boolean | void | Promise<boolean | void>;
-  data?: T;
-}
+// interface ActionSheetButton<T = any> {
+//   text?: string;
+//   role?: "cancel" | "destructive" | "selected" | string;
+//   icon?: string;
+//   cssClass?: string | string[];
+//   handler?: () => boolean | void | Promise<boolean | void>;
+//   data?: T;
+// }
 
-interface ActionSheetOptions {
-  header?: string;
-  subHeader?: string;
-  cssClass?: string | string[];
-  buttons: (ActionSheetButton | string)[];
-  backdropDismiss?: boolean;
-  translucent?: boolean;
-  animated?: boolean;
-  mode?: Mode;
-  keyboardClose?: boolean;
-  id?: string;
-  htmlAttributes?: { [key: string]: any };
+// interface ActionSheetOptions {
+//   header?: string;
+//   subHeader?: string;
+//   cssClass?: string | string[];
+//   buttons: (ActionSheetButton | string)[];
+//   backdropDismiss?: boolean;
+//   translucent?: boolean;
+//   animated?: boolean;
+//   mode?: Mode;
+//   keyboardClose?: boolean;
+//   id?: string;
+//   htmlAttributes?: { [key: string]: any };
 
-  enterAnimation?: AnimationBuilder;
-  leaveAnimation?: AnimationBuilder;
-}
+//   enterAnimation?: AnimationBuilder;
+//   leaveAnimation?: AnimationBuilder;
+// }
 //#endregion Interfaces
