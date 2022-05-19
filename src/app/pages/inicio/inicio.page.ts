@@ -8,9 +8,9 @@ import { Component, OnInit } from '@angular/core';
 export class InicioPage implements OnInit {
 
   //#region variables
-  list= [
-    {label: 'alert', routerlink: '/alert'},
-    {label: 'action sheet', routerlink: '/action-sheet'},
+  list: Component[]= [
+    {icon: 'american-football', label: 'action sheet', routerlink: '/action-sheet'},
+    {icon: 'appstore', label: 'alert', routerlink: '/alert'},
   ]
   //#endregion variables
   constructor() { }
@@ -19,3 +19,12 @@ export class InicioPage implements OnInit {
   }
 
 }
+
+
+//#region Interfaces
+interface Component {
+  icon: string,
+  label: string,
+  routerlink: string,
+}
+//#endregion Interfaces
