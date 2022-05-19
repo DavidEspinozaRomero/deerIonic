@@ -10,7 +10,7 @@ export class InicioPage implements OnInit {
   //#region variables
   list: Componente[]= [
     {icon: 'american-football', label: 'action sheet', routerlink: '/action-sheet'},
-    {icon: 'appstore', label: 'alert', routerlink: '/alert'},
+    {icon: 'alert-circle-outline', label: 'alert', routerlink: '/alert'},
   ]
   //#endregion variables
   constructor() { }
