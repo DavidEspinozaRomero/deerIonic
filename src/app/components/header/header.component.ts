@@ -5,7 +5,7 @@ import { Component, OnInit } from '@angular/core';
     templateUrl: 'header.component.html'
 })
 
-export class NameComponent implements OnInit {
+export class HeaderComponent implements OnInit {
 
     //#region Variables
     @Input() title:string
