@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class InicioPage implements OnInit {
 
   //#region variables
-  list: Component[]= [
+  list: Componente[]= [
     {icon: 'american-football', label: 'action sheet', routerlink: '/action-sheet'},
     {icon: 'appstore', label: 'alert', routerlink: '/alert'},
   ]
@@ -22,7 +22,7 @@ export class InicioPage implements OnInit {
 
 
 //#region Interfaces
-interface Component {
+interface Componente {
   icon: string,
   label: string,
   routerlink: string,
