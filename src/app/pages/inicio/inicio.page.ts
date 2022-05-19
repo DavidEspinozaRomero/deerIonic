@@ -7,6 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InicioPage implements OnInit {
 
+  //#region variables
+  list= [
+    {label: 'alert', routerlink: '/alert'},
+    {label: 'action sheet', routerlink: '/action-sheet'},
+  ]
+  //#endregion variables
   constructor() { }
 
   ngOnInit() {
