@@ -6,9 +6,10 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./avatar.page.scss"],
 })
 export class AvatarPage implements OnInit {
-  constructor() {}
   //#region variables
+  list:[] = Array(10)
   //#endregion variables
+  constructor() {}
   ngOnInit() {}
 
   //#region methods
