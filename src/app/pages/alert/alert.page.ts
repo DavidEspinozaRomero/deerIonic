@@ -66,14 +66,15 @@ export class AlertPage implements OnInit {
           cssClass: "secondary",
           id: "cancel-button",
           handler: (blah) => {
-            console.log("Confirm Cancel: blah");
+            console.log("Confirm Cancel: blah", blah);
           },
         },
         {
           text: "Okay",
           id: "confirm-button",
-          handler: () => {
-            console.log("Confirm Okay");
+          handler: (data) => {
+            console.log("Confirm Okay", data);
+            this.title = data.name1;
           },
         },
       ],
