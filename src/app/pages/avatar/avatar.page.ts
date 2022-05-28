@@ -7,7 +7,7 @@ import { Component, OnInit } from "@angular/core";
 })
 export class AvatarPage implements OnInit {
   //#region variables
-  list:[] = Array(10)
+  list: any[] = Array(10);
   //#endregion variables
   constructor() {}
   ngOnInit() {}
