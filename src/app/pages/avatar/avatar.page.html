@@ -13,7 +13,7 @@
 </ion-header>
 
 <ion-content>
-  <ion-chip color="primary" mode="ios" outline="true">
+  <ion-chip *ngFor="let item of list" color="primary" mode="ios" outline="true">
     <ion-avatar>
       <img [src]="'https://randomuser.me/api/portraits/women/55.jpg'" />
     </ion-avatar>
