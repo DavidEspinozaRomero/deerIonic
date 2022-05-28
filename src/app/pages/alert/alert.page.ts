@@ -8,7 +8,9 @@ import { AlertController } from "@ionic/angular";
 })
 export class AlertPage implements OnInit {
   constructor(public alertController: AlertController) {}
-
+  //#region variables
+  title: string = "Alert page";
+  //#endregion variables
   ngOnInit() {}
 
   //#region methods
@@ -33,6 +35,45 @@ export class AlertPage implements OnInit {
           id: "confirm-button",
           handler: () => {
             console.log("Confirm Okay");
+          },
+        },
+      ],
+    });
+
+    await alert.present();
+
+    const { role } = await alert.onDidDismiss();
+    console.log("onDidDismiss resolved with role", role);
+  }
+
+  async presentAlertInput() {
+    const alert = await this.alertController.create({
+      cssClass: "my-custom-class",
+      header: "Alert",
+      subHeader: "Subtitle",
+      message: "This is an alert message.",
+      inputs: [
+        {
+          name: "name1",
+          type: "text",
+          placeholder: "Placeholder 1",
+        },
+      ],
+      buttons: [
+        {
+          text: "Cancel",
+          role: "cancel",
+          cssClass: "secondary",
+          id: "cancel-button",
+          handler: (blah) => {
+            console.log("Confirm Cancel: blah", name1);
+          },
+        },
+        {
+          text: "Okay",
+          id: "confirm-button",
+          handler: () => {
+            console.log("Confirm Okay", name1);
           },
         },
       ],
