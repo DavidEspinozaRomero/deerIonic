@@ -11,6 +11,7 @@ export class InicioPage implements OnInit {
   list: Componente[]= [
     {icon: 'american-football', label: 'action sheet', routerlink: '/action-sheet'},
     {icon: 'alert-circle-outline', label: 'alert', routerlink: '/alert'},
+    {icon: 'beaker', label: 'avatar', routerlink: '/avatar'},
   ]
   //#endregion variables
   constructor() { }
