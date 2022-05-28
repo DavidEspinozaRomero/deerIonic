@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { AlertPage } from './alert.page';
+import { AvatarPage } from './avatar.page';
 
 const routes: Routes = [
   {
