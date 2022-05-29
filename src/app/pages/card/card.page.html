@@ -1,19 +1,11 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-buttons slot="start">
-      <ion-back-button defaultHref="/"></ion-back-button>
-    </ion-buttons>
-    <ion-title>Botones</ion-title>
-    <ion-buttons slot="end">
-      <ion-button color="primary">
-        <ion-icon slot="icon-only" name="star"></ion-icon>
-      </ion-button>
-      <ion-button color="primary">
-        <ion-icon slot="icon-only" name="heart"></ion-icon>
-      </ion-button>
-    </ion-buttons>
-  </ion-toolbar>
-</ion-header>
+<app-header title="Card"></app-header>
 
-<ion-content >
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle>Awesome Subtitle</ion-card-subtitle>
+      <ion-card-title>Awesome Title</ion-card-title>
+    </ion-card-header>
+    <ion-card-content> Awesome content </ion-card-content>
+  </ion-card>
 </ion-content>
