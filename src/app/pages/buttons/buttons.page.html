@@ -5,12 +5,18 @@
     </ion-buttons>
     <ion-title>Botones</ion-title>
     <ion-buttons slot="end">
-      <ion-avatar>
-        <img [src]="'https://randomuser.me/api/portraits/women/55.jpg'" />
-      </ion-avatar>
+      <ion-button color="primary">
+        <ion-icon slot="icon-only" name="star"></ion-icon>
+      </ion-button>
+      <ion-button color="primary">
+        <ion-icon slot="icon-only" name="heart"></ion-icon>
+      </ion-button>
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+  <ion-button size="large">Large</ion-button>
+  <ion-button>Default</ion-button>
+  <ion-button size="small">Small</ion-button>
 </ion-content>
