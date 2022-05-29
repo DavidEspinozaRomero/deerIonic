@@ -28,7 +28,7 @@
     >Anchor</ion-button
   >
 
-  <ion-row>
+  <ion-row class="mt-3">
     <ion-col size="4">
       <ion-button expand="full" fill="outline">Outline + Full</ion-button>
     </ion-col>
@@ -41,4 +41,18 @@
       <ion-button shape="round" fill="outline">Outline + Round</ion-button>
     </ion-col>
   </ion-row>
+
+  <ion-button class="mt-3">
+    <ion-icon slot="start" name="star"></ion-icon>
+    Left Icon
+  </ion-button>
+  
+  <ion-button>
+    Right Icon
+    <ion-icon slot="end" name="star"></ion-icon>
+  </ion-button>
+  
+  <ion-button>
+    <ion-icon slot="icon-only" name="star"></ion-icon>
+  </ion-button>
 </ion-content>
