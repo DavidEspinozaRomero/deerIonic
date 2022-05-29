@@ -13,6 +13,7 @@ export class InicioPage implements OnInit {
     {icon: 'alert-circle-outline', label: 'alert', routerlink: '/alert'},
     {icon: 'beaker', label: 'avatar', routerlink: '/avatar'},
     {icon: 'radio-button-on', label: 'buttons', routerlink: '/buttons'},
+    {icon: 'card', label: 'buttons', routerlink: '/card'},
   ]
   //#endregion variables
   constructor() { }
