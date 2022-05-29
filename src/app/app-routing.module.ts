@@ -30,7 +30,7 @@ const routes: Routes = [
       import("./pages/avatar/avatar.module").then((m) => m.AvatarPageModule),
   },
   {
-    path: "avatar",
+    path: "buttons",
     loadChildren: () =>
       import("./pages/buttons/buttons.module").then((m) => m.ButtonsPageModule),
   },
