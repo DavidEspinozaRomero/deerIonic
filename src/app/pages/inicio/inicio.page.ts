@@ -12,7 +12,7 @@ export class InicioPage implements OnInit {
     {icon: 'american-football', label: 'action sheet', routerlink: '/action-sheet'},
     {icon: 'alert-circle-outline', label: 'alert', routerlink: '/alert'},
     {icon: 'beaker', label: 'avatar', routerlink: '/avatar'},
-    {icon: 'beaker', label: 'buttons', routerlink: '/buttons'},
+    {icon: 'radio-button-on', label: 'buttons', routerlink: '/buttons'},
   ]
   //#endregion variables
   constructor() { }

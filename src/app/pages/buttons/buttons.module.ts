@@ -4,7 +4,7 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { AvatarPageRoutingModule } from './avatar-routing.module';
+import { ButtonsPageRoutingModule } from './buttons-routing.module';
 import { ComponentsModule } from '../../components/components.module';
 import { ButtonsPage } from './buttons.page';
 
@@ -13,7 +13,7 @@ import { ButtonsPage } from './buttons.page';
     CommonModule,
     FormsModule,
     IonicModule,
-    AvatarPageRoutingModule,
+    ButtonsPageRoutingModule,
     ComponentsModule
   ],
   declarations: [ButtonsPage]
