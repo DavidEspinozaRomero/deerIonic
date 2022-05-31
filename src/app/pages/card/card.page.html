@@ -1,11 +1,27 @@
 <app-header title="Card"></app-header>
 
 <ion-content>
-  <ion-card>
+  <ion-card mode="ios">
     <ion-card-header>
       <ion-card-subtitle>Awesome Subtitle</ion-card-subtitle>
       <ion-card-title>Awesome Title</ion-card-title>
     </ion-card-header>
     <ion-card-content> Awesome content </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-item color="primary">
+      <ion-icon color="light" slot="start" name="pin"></ion-icon>
+      <ion-label>Marcador</ion-label>
+    </ion-item>
+    <ion-content>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ad veritatis
+      ea quidem officia tempora odio est illo, laudantium id, minima iste eaque
+      possimus neque ex sunt? Dolor, porro molestias?
+    </ion-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-img [src]="/assets/shapes.svg"></ion-img>
   </ion-card>
 </ion-content>
