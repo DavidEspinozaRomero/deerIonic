@@ -18,7 +18,9 @@ export class CheckPage implements OnInit {
   ngOnInit() {}
 
   //#region methods
-
+  onClick(item: any) {
+    console.log(item);
+  }
   //#endregion methods
 }
 
