@@ -7,7 +7,8 @@ import { Component, OnInit } from "@angular/core";
 })
 export class DateTimePage implements OnInit {
   //#region variables
-
+  dateValue: Date = new Date();
+  dateValue2: Date = new Date();
   //#endregion variables
   constructor() {}
   ngOnInit() {}
