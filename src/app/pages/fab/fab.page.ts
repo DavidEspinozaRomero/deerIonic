@@ -7,20 +7,13 @@ import { Component, OnInit } from "@angular/core";
 })
 export class FabPage implements OnInit {
   //#region variables
-  list: any[] = [
-    { name: "primary", checked: false },
-    { name: "secondary", checked: true },
-    { name: "tertiary", checked: false },
-    { name: "success", checked: true },
-  ];
+  items: any[] = Array(100)
   //#endregion variables
   constructor() {}
   ngOnInit() {}
 
   //#region methods
-  onClick(item: any) {
-    console.log(item);
-  }
+
   //#endregion methods
 }
 

@@ -18,7 +18,7 @@ export class InicioPage implements OnInit {
     { icon: "radio-button-on", label: "buttons", routerlink: "/buttons" },
     { icon: "card", label: "card", routerlink: "/card" },
     { icon: "calendar", label: "date time", routerlink: "/date-time" },
-    { icon: "car", label: "fabs", routerlink: "/fabs" },
+    { icon: "car", label: "fab", routerlink: "/fab" },
   ];
   //#endregion variables
   constructor() {}
