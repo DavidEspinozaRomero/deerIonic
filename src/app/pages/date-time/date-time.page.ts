@@ -13,7 +13,16 @@ export class DateTimePage implements OnInit {
   ngOnInit() {}
 
   //#region methods
+  confirm() {
+    console.log("confirm");
+  }
 
+  reset() {
+    console.log("reset");
+  }
+  formatDate(value: any) {
+    console.log(value);
+  }
   //#endregion methods
 }
 
