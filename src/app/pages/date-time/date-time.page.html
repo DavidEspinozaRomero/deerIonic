@@ -67,8 +67,8 @@
   </ion-buttons>
 </ion-datetime>
 
-<div class="mt-3"> Datetime in popover with cover element </div>
-<ion-item button="true" id="open-date-input</div>
+<div> Datetime in popover with cover element </div>
+<ion-item button="true" id="open-date-input">
   <ion-label>Date</ion-label>
   <ion-text slot="end">{{ dateValue }}</ion-text>
   <ion-popover trigger="open-date-input" show-backdrop="false">
@@ -80,9 +80,9 @@
       ></ion-datetime>
     </ng-template>
   </ion-popover>
-</ion-item> 
+</ion-item>
 
-<div class="mt-3"> Datetime in popover with input </div>
+<div> Datetime in popover with input </div>
 <ion-item>
   <ion-input [value]="dateValue2"></ion-input>
   <ion-button fill="clear" id="open-date-input-2">
@@ -98,5 +98,3 @@
     </ng-template>
   </ion-popover>
 </ion-item>
-
-</ion-content>
