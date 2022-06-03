@@ -84,18 +84,25 @@
   --ion-color-youtube-tint: #e42c2c;
 
   --ion-color-twitter: #00acee;
-	--ion-color-twitter-rgb: 0,172,238;
-	--ion-color-twitter-contrast: #000000;
-	--ion-color-twitter-contrast-rgb: 0,0,0;
-	--ion-color-twitter-shade: #0097d1;
-	--ion-color-twitter-tint: #1ab4f0;
+  --ion-color-twitter-rgb: 0, 172, 238;
+  --ion-color-twitter-contrast: #000000;
+  --ion-color-twitter-contrast-rgb: 0, 0, 0;
+  --ion-color-twitter-shade: #0097d1;
+  --ion-color-twitter-tint: #1ab4f0;
 
-  --ion-color-facebook: #3b5998 ;
-	--ion-color-facebook-rgb: 59,89,152;
-	--ion-color-facebook-contrast: #ffffff;
-	--ion-color-facebook-contrast-rgb: 255,255,255;
-	--ion-color-facebook-shade: #344e86;
-	--ion-color-facebook-tint: #4f6aa2;
+  --ion-color-facebook: #3b5998;
+  --ion-color-facebook-rgb: 59, 89, 152;
+  --ion-color-facebook-contrast: #ffffff;
+  --ion-color-facebook-contrast-rgb: 255, 255, 255;
+  --ion-color-facebook-shade: #344e86;
+  --ion-color-facebook-tint: #4f6aa2;
+
+  --ion-color-favorite: #69bb7b;
+  --ion-color-favorite-rgb: 105, 187, 123;
+  --ion-color-favorite-contrast: #ffffff;
+  --ion-color-favorite-contrast-rgb: 255, 255, 255;
+  --ion-color-favorite-shade: #5ca56c;
+  --ion-color-favorite-tint: #78c288;
 }
 
 .ion-color-youtube {
@@ -106,6 +113,7 @@
   --ion-color-shade: var(--ion-color-youtube-shade);
   --ion-color-tint: var(--ion-color-youtube-tint);
 }
+
 .ion-color-twitter {
   --ion-color-base: var(--ion-color-twitter);
   --ion-color-base-rgb: var(--ion-color-twitter-rgb);
@@ -114,6 +122,7 @@
   --ion-color-shade: var(--ion-color-twitter-shade);
   --ion-color-tint: var(--ion-color-twitter-tint);
 }
+
 .ion-color-facebook {
   --ion-color-base: var(--ion-color-facebook);
   --ion-color-base-rgb: var(--ion-color-facebook-rgb);
@@ -121,6 +130,15 @@
   --ion-color-contrast-rgb: var(--ion-color-facebook-contrast-rgb);
   --ion-color-shade: var(--ion-color-facebook-shade);
   --ion-color-tint: var(--ion-color-facebook-tint);
+}
+
+.ion-color-favorite {
+  --ion-color-base: var(--ion-color-favorite);
+  --ion-color-base-rgb: var(--ion-color-favorite-rgb);
+  --ion-color-contrast: var(--ion-color-favorite-contrast);
+  --ion-color-contrast-rgb: var(--ion-color-favorite-contrast-rgb);
+  --ion-color-shade: var(--ion-color-favorite-shade);
+  --ion-color-tint: var(--ion-color-favorite-tint);
 }
 
 @media (prefers-color-scheme: dark) {
