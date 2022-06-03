@@ -83,12 +83,19 @@
   --ion-color-youtube-shade: #c61212;
   --ion-color-youtube-tint: #e42c2c;
 
-  --ion-color-twiter: #00acee;
-	--ion-color-twiter-rgb: 0,172,238;
-	--ion-color-twiter-contrast: #000000;
-	--ion-color-twiter-contrast-rgb: 0,0,0;
-	--ion-color-twiter-shade: #0097d1;
-	--ion-color-twiter-tint: #1ab4f0;
+  --ion-color-twitter: #00acee;
+	--ion-color-twitter-rgb: 0,172,238;
+	--ion-color-twitter-contrast: #000000;
+	--ion-color-twitter-contrast-rgb: 0,0,0;
+	--ion-color-twitter-shade: #0097d1;
+	--ion-color-twitter-tint: #1ab4f0;
+
+  --ion-color-facebook: #3b5998 ;
+	--ion-color-facebook-rgb: 59,89,152;
+	--ion-color-facebook-contrast: #ffffff;
+	--ion-color-facebook-contrast-rgb: 255,255,255;
+	--ion-color-facebook-shade: #344e86;
+	--ion-color-facebook-tint: #4f6aa2;
 }
 
 .ion-color-youtube {
@@ -99,13 +106,21 @@
   --ion-color-shade: var(--ion-color-youtube-shade);
   --ion-color-tint: var(--ion-color-youtube-tint);
 }
-.ion-color-twiter {
-  --ion-color-base: var(--ion-color-twiter);
-  --ion-color-base-rgb: var(--ion-color-twiter-rgb);
-  --ion-color-contrast: var(--ion-color-twiter-contrast);
-  --ion-color-contrast-rgb: var(--ion-color-twiter-contrast-rgb);
-  --ion-color-shade: var(--ion-color-twiter-shade);
-  --ion-color-tint: var(--ion-color-twiter-tint);
+.ion-color-twitter {
+  --ion-color-base: var(--ion-color-twitter);
+  --ion-color-base-rgb: var(--ion-color-twitter-rgb);
+  --ion-color-contrast: var(--ion-color-twitter-contrast);
+  --ion-color-contrast-rgb: var(--ion-color-twitter-contrast-rgb);
+  --ion-color-shade: var(--ion-color-twitter-shade);
+  --ion-color-tint: var(--ion-color-twitter-tint);
+}
+.ion-color-facebook {
+  --ion-color-base: var(--ion-color-facebook);
+  --ion-color-base-rgb: var(--ion-color-facebook-rgb);
+  --ion-color-contrast: var(--ion-color-facebook-contrast);
+  --ion-color-contrast-rgb: var(--ion-color-facebook-contrast-rgb);
+  --ion-color-shade: var(--ion-color-facebook-shade);
+  --ion-color-tint: var(--ion-color-facebook-tint);
 }
 
 @media (prefers-color-scheme: dark) {
