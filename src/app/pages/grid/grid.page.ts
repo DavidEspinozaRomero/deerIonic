@@ -7,6 +7,7 @@ import { Component, OnInit } from "@angular/core";
 })
 export class GridPage implements OnInit {
   //#region variables
+  items: any[] = Array(12).fill('Hola')
   //#endregion variables
   constructor() {}
   ngOnInit() {}
