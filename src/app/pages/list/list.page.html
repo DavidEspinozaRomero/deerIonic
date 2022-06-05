@@ -1,7 +1,7 @@
 <app-header title="List sliding"></app-header>
 
 <ion-content>
-  <ion-list>
+  <ion-list #list>
     <ion-item-sliding *ngFor="let user of users | async; let i=index">
       <ion-item>
         <ion-label>
@@ -12,16 +12,16 @@
       </ion-item>
 
       <ion-item-options side="start">
-        <ion-item-option (click)="favorite(item)">
+        <ion-item-option (click)="favorite(user)">
           <ion-icon slot="icon-only" name="heart"></ion-icon>
         </ion-item-option>
-        <ion-item-option (click)="share(item)">
+        <ion-item-option (click)="share(user)">
           <ion-icon color="secondary" slot="icon-only" name="share"></ion-icon
         ></ion-item-option>
       </ion-item-options>
 
       <ion-item-options side="end">
-        <ion-item-option (click)="unread(item)">
+        <ion-item-option (click)="unread(user)">
           <ion-icon color="danger" slot="icon-only" name="trash"></ion-icon>
         </ion-item-option>
       </ion-item-options>

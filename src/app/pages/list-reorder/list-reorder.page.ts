@@ -3,11 +3,11 @@ import { DataService } from "../../services/data.service";
 import { Observable } from "rxjs";
 
 @Component({
-  selector: "app-list",
-  templateUrl: "./list.page.html",
-  styleUrls: ["./list.page.scss"],
+  selector: "app-list-reorder",
+  templateUrl: "./list-reorder.page.html",
+  styleUrls: ["./list-reorder.page.scss"],
 })
-export class ListPage implements OnInit {
+export class ListReorderPage implements OnInit {
   //#region variables
   users: Observable<any>;
 
