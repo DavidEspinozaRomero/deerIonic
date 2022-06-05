@@ -20,10 +20,14 @@ export class InicioPage implements OnInit {
     { icon: "calendar", label: "date time", routerlink: "/date-time" },
     { icon: "car", label: "fab", routerlink: "/fab" },
     { icon: "grid", label: "grid", routerlink: "/grid" },
-    { icon: "infinite", label: "infinite scroll", routerlink: "/infinite-scroll" },
+    {
+      icon: "infinite",
+      label: "infinite scroll",
+      routerlink: "/infinite-scroll",
+    },
     { icon: "hammer", label: "input - forms", routerlink: "/input" },
     { icon: "list", label: "list sliding", routerlink: "/list" },
-    { icon: "reorder", label: "list reorder", routerlink: "/reorder" },
+    { icon: "move", label: "list reorder", routerlink: "/reorder" },
   ];
   //#endregion variables
   constructor() {}
