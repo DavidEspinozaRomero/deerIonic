@@ -1,11 +1,11 @@
 import { Component, OnInit } from "@angular/core";
 
 @Component({
-  selector: "app-grid",
-  templateUrl: "./grid.page.html",
-  styleUrls: ["./grid.page.scss"],
+  selector: "app-input",
+  templateUrl: "./input.page.html",
+  styleUrls: ["./input.page.scss"],
 })
-export class GridPage implements OnInit {
+export class InputPage implements OnInit {
   //#region variables
   items: any[] = Array(12).fill('Hola')
   //#endregion variables

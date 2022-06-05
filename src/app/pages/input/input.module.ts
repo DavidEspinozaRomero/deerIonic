@@ -4,18 +4,18 @@ import { FormsModule } from "@angular/forms";
 
 import { IonicModule } from "@ionic/angular";
 
-import { GridPageRoutingModule } from "./grid-routing.module";
+import { InputPageRouting } from "./input.routing";
 import { ComponentsModule } from "../../components/components.module";
-import { GridPage } from "./grid.page";
+import { InputPage } from "./input.page";
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    GridPageRoutingModule,
+    InputPageRouting,
     ComponentsModule,
   ],
-  declarations: [GridPage],
+  declarations: [InputPage],
 })
-export class GridPageModule {}
+export class InputPageModule {}

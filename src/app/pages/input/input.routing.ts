@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { GridPage } from './grid.page';
+import { InputPage } from './input.page';
 
 
 const routes: Routes = [
   {
     path: '',
-    component: GridPage
+    component: InputPage
   }
 ];
 
@@ -14,4 +14,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
 })
-export class GridPageRoutingModule {}
+export class InputPageRouting {}
