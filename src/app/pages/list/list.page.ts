@@ -1,5 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import { DataService } from "../../services/data.service";
+import { Observable } from "rxjs";
 
 @Component({
   selector: "app-list",
@@ -8,7 +9,7 @@ import { DataService } from "../../services/data.service";
 })
 export class ListPage implements OnInit {
   //#region variables
-  users: any
+  users: Observable<any>;
   //#endregion variables
 
   constructor(private _dataservice: DataService) {}
@@ -63,4 +64,3 @@ export class ListPage implements OnInit {
 //   bs: string;
 // }
 //#endregion Interfaces
-
