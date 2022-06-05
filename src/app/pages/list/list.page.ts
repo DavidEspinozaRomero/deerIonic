@@ -16,7 +16,7 @@ export class ListPage implements OnInit {
 
   //#region Apis
   getUsers() {
-    this.users = this._dataservice.getUsers().subcribe(console.log);
+    this.users = this._dataservice.getUsers().subscribe(console.log);
   }
 
   //#endregion Apis
@@ -40,5 +40,27 @@ interface User {
   name: string;
   username: string;
   email: string;
+  address: UserAddress;
+  phone: string;
+  website: string;
+  company: UserCompany;
+}
+
+interface UserAddress {
+  street: string;
+  suite: string;
+  city: string;
+  zipcode: string;
+  geo: {
+    lat: string;
+    lng: string;
+  };
+}
+
+interface UserCompany {
+  name: string;
+  catchPhrase: string;
+  bs: string;
 }
 //#endregion Interfaces
+
