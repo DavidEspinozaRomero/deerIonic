@@ -64,6 +64,11 @@ const routes: Routes = [
     loadChildren: () =>
       import("./pages/infinite-scroll/infinite-scroll.module").then((m) => m.InfiniteScrollPageModule),
   },
+  {
+    path: "input",
+    loadChildren: () =>
+      import("./pages/infinite-scroll/infinite-scroll.module").then((m) => m.InfiniteScrollPageModule),
+  },
 ];
 
 @NgModule({
