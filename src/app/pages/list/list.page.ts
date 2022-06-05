@@ -8,7 +8,7 @@ import { DataService } from "../../services/data.service";
 })
 export class ListPage implements OnInit {
   //#region variables
-  users: User[];
+  users: any
   //#endregion variables
 
   constructor(private _dataservice: DataService) {}
@@ -35,32 +35,32 @@ export class ListPage implements OnInit {
 }
 
 //#region Interfaces
-export interface User {
-  id: number;
-  name: string;
-  username: string;
-  email: string;
-  address: UserAddress;
-  phone: string;
-  website: string;
-  company: UserCompany;
-}
+// export interface User {
+//   id: number;
+//   name: string;
+//   username: string;
+//   email: string;
+//   address: UserAddress;
+//   phone: string;
+//   website: string;
+//   company: UserCompany;
+// }
 
-interface UserAddress {
-  street: string;
-  suite: string;
-  city: string;
-  zipcode: string;
-  geo: {
-    lat: string;
-    lng: string;
-  };
-}
+// interface UserAddress {
+//   street: string;
+//   suite: string;
+//   city: string;
+//   zipcode: string;
+//   geo: {
+//     lat: string;
+//     lng: string;
+//   };
+// }
 
-interface UserCompany {
-  name: string;
-  catchPhrase: string;
-  bs: string;
-}
+// interface UserCompany {
+//   name: string;
+//   catchPhrase: string;
+//   bs: string;
+// }
 //#endregion Interfaces
 
