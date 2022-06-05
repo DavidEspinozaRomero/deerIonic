@@ -1,26 +1,27 @@
 <app-header title="Input - Forms"></app-header>
 
 <ion-content>
-  <!-- <ion-list>
-    <ion-item>
-      <ion-label>Awesome Label</ion-label>
-      iform
-    </ion-item>
-  </ion-list> -->
+
 
   <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
-    <ion-item>
-      <ion-label position="floating"
-        >E-Mail <ion-text color="danger">*</ion-text></ion-label
-      >
-      <ion-input required formControlName="email" type="text"></ion-input>
-    </ion-item>
-    <ion-item>
-      <ion-label position="floating"
-        >Password <ion-text color="danger">*</ion-text></ion-label
-      >
-      <ion-input required formControlName="password" type="text"></ion-input>
-    </ion-item>
+    <ion-list>
+      <ion-list-header>
+        <ion-label>New This Week</ion-label>
+        <ion-button>See All</ion-button>
+      </ion-list-header>
+      <ion-item>
+        <ion-label position="floating"
+          >E-Mail <ion-text color="danger">*</ion-text></ion-label
+        >
+        <ion-input required formControlName="email" type="text"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating"
+          >Password <ion-text color="danger">*</ion-text></ion-label
+        >
+        <ion-input required formControlName="password" type="text"></ion-input>
+      </ion-item>
+    </ion-list>
     <ion-button
       block
       color="primary"

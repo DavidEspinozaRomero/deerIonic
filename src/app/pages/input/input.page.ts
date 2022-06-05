@@ -8,13 +8,13 @@ import { FormGroup, FormBuilder, Validators } from "@angular/forms";
 })
 export class InputPage implements OnInit {
   //#region variables
-  items: any[] = Array(12).fill("Hola");
 
   loginForm: FormGroup = this._fb.group({
     email: ["", [Validators.email, Validators.required]],
     password: ["", [Validators.minLength(6), Validators.required]],
   });
   //#endregion variables
+
   constructor(private _fb: FormBuilder) {}
   ngOnInit() {}
 
