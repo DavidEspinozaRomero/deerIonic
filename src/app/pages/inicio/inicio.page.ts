@@ -22,6 +22,7 @@ export class InicioPage implements OnInit {
     { icon: "grid", label: "grid", routerlink: "/grid" },
     { icon: "infinite", label: "infinite scroll", routerlink: "/infinite-scroll" },
     { icon: "hammer", label: "input - forms", routerlink: "/input" },
+    { icon: "list", label: "List", routerlink: "/list" },
   ];
   //#endregion variables
   constructor() {}
