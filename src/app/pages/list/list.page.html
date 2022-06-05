@@ -1,16 +1,13 @@
 <app-header title="List sliding"></app-header>
 
 <ion-content>
-  <!-- https://jsonplaceholder.typicode.com/users -->
   <ion-list>
-    <ion-item>
+    <ion-item *ngFor="let user of users | async; let i=index">
       <ion-label>
-        <h3>Nompre</h3>
-        <p>Hola mundo</p>
+        <h3>{{user.name}}</h3>
+        <p> {{user.username}} </p>
       </ion-label>
-      <ion-label slot="end" text-rigth>
-        09465218
-      </ion-label>
+      <ion-label slot="end" text-rigth> {{user.email}} </ion-label>
     </ion-item>
   </ion-list>
 

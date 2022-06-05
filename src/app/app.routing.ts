@@ -47,7 +47,9 @@ const routes: Routes = [
   {
     path: "date-time",
     loadChildren: () =>
-      import("./pages/date-time/date-time.module").then((m) => m.DateTimePageModule),
+      import("./pages/date-time/date-time.module").then(
+        (m) => m.DateTimePageModule
+      ),
   },
   {
     path: "fab",
@@ -62,7 +64,9 @@ const routes: Routes = [
   {
     path: "infinite-scroll",
     loadChildren: () =>
-      import("./pages/infinite-scroll/infinite-scroll.module").then((m) => m.InfiniteScrollPageModule),
+      import("./pages/infinite-scroll/infinite-scroll.module").then(
+        (m) => m.InfiniteScrollPageModule
+      ),
   },
   {
     path: "input",
@@ -82,4 +86,4 @@ const routes: Routes = [
   ],
   exports: [RouterModule],
 })
-export class AppRoutingModule {}
+export class AppRouting {}

@@ -1,4 +1,5 @@
 import { Component, OnInit } from "@angular/core";
+import { DataService } from "../../services/data.service";
 
 @Component({
   selector: "app-list",
@@ -7,11 +8,18 @@ import { Component, OnInit } from "@angular/core";
 })
 export class ListPage implements OnInit {
   //#region variables
-
+  users: User[];
   //#endregion variables
 
-  constructor() {}
+  constructor(private _dataservice: DataService) {}
   ngOnInit() {}
+
+  //#region Apis
+  getUsers() {
+    this.users = this._dataservice.getUsers().subcribe(console.log);
+  }
+
+  //#endregion Apis
 
   //#region methods
   favorite(item) {
@@ -27,5 +35,10 @@ export class ListPage implements OnInit {
 }
 
 //#region Interfaces
-
+interface User {
+  id: number;
+  name: string;
+  username: string;
+  email: string;
+}
 //#endregion Interfaces
