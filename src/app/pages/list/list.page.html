@@ -1,7 +1,20 @@
 <app-header title="List sliding"></app-header>
 
 <ion-content>
+  <!-- https://jsonplaceholder.typicode.com/users -->
+  <ion-list>
+    <ion-item>
+      <ion-label>
+        <h3>Nompre</h3>
+        <p>Hola mundo</p>
+      </ion-label>
+      <ion-label slot="end" text-rigth>
+        09465218
+      </ion-label>
+    </ion-item>
+  </ion-list>
 
+  <div class="mt-3">Snipet</div>
   <ion-list>
     <ion-item-sliding>
       <ion-item>
@@ -9,13 +22,14 @@
       </ion-item>
       <ion-item-options side="start">
         <ion-item-option (click)="favorite(item)">Favorite</ion-item-option>
-        <ion-item-option color="primary" (click)="share(item)">Share</ion-item-option>
+        <ion-item-option color="primary" (click)="share(item)"
+          >Share</ion-item-option
+        >
       </ion-item-options>
-  
+
       <ion-item-options side="start">
         <ion-item-option (click)="unread(item)">Unread</ion-item-option>
       </ion-item-options>
     </ion-item-sliding>
   </ion-list>
-
 </ion-content>
