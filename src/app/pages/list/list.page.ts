@@ -13,7 +13,9 @@ export class ListPage implements OnInit {
   //#endregion variables
 
   constructor(private _dataservice: DataService) {}
-  ngOnInit() {}
+  ngOnInit() {
+    this.getUsers()
+  }
 
   //#region Apis
   getUsers() {
