@@ -19,8 +19,8 @@ export class InputPage implements OnInit {
   ngOnInit() {}
 
   //#region methods
-  onSubmit(event:any){
-    console.log(event);
+  onSubmit(){
+    console.log(this.loginForm.value);
     
   }
   //#endregion methods
