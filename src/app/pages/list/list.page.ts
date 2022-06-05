@@ -17,7 +17,7 @@ export class ListPage implements OnInit {
 
   //#region Apis
   getUsers() {
-    this.users = this._dataservice.getUsers().subscribe(console.log);
+    this.users = this._dataservice.getUsers()
   }
 
   //#endregion Apis
