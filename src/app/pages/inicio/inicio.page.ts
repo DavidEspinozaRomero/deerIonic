@@ -20,6 +20,7 @@ export class InicioPage implements OnInit {
     { icon: "calendar", label: "date time", routerlink: "/date-time" },
     { icon: "car", label: "fab", routerlink: "/fab" },
     { icon: "grid", label: "grid", routerlink: "/grid" },
+    { icon: "infinite", label: "infinite scroll", routerlink: "/infinite-scroll" },
   ];
   //#endregion variables
   constructor() {}
