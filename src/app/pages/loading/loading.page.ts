@@ -8,7 +8,7 @@ import { LoadingController } from "@ionic/angular";
 })
 export class LoadingPage implements OnInit {
   //#region variables
-  loading
+  loading:any
   //#endregion variables
 
   constructor(public loadingController: LoadingController) {}
@@ -17,7 +17,7 @@ export class LoadingPage implements OnInit {
     this.presentLoading("Please wait...");
 
     setTimeout(() => {
-      this.loading.dismiss()
+      // this.loading.dismiss() // revizar este codigo
     }, 2000);
   }
   //#region Apis
