@@ -1,6 +1,6 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
-import { IonReorderGroup } from '@ionic/angular';
-import { ItemReorderEventDetail } from '@ionic/core';
+import { Component, OnInit, ViewChild } from "@angular/core";
+import { IonReorderGroup } from "@ionic/angular";
+import { ItemReorderEventDetail } from "@ionic/core";
 
 @Component({
   selector: "app-list-reorder",
@@ -10,12 +10,11 @@ import { ItemReorderEventDetail } from '@ionic/core';
 export class ListReorderPage implements OnInit {
   //#region variables
   @ViewChild(IonReorderGroup) reorderGroup: IonReorderGroup;
-  items: any[] = Array(20)
+  items: any[] = Array(10);
   //#endregion variables
 
   constructor() {}
-  ngOnInit() {
-  }
+  ngOnInit() {}
 
   //#region Apis
 
@@ -25,7 +24,11 @@ export class ListReorderPage implements OnInit {
   doReorder(ev: CustomEvent<ItemReorderEventDetail>) {
     // The `from` and `to` properties contain the index of the item
     // when the drag started and ended, respectively
-    console.log('Dragged from index', ev.detail.from, 'to', ev.detail.to);
+    console.log("Dragged from index", ev.detail.from, "to", ev.detail.to);
+
+    // reorganizar manualmente si es necesario
+    // const itemMove = this.items.splice(ev.detail.from, 1)[0];
+    // this.items.splice(ev.detail.to, 0, itemMove);
 
     // Finish the reorder and position the item in the DOM based on
     // where the gesture ended. This method can also be called directly
