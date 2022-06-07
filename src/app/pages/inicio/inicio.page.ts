@@ -16,7 +16,7 @@ export class InicioPage implements OnInit {
   constructor(private menu: MenuController, private dataService: DataService) {}
 
   ngOnInit() {
-    this.componentes = this.dataService.getMenuOptions();
+    this.list = this.dataService.getMenuOptions();
   }
 
   //#region Methods

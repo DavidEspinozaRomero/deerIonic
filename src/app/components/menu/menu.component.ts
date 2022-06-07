@@ -9,12 +9,12 @@ import { DataService } from "../../services/data.service";
 })
 export class MenuComponent implements OnInit {
   //#region Variables
-  componentes: Observable<Componente[]>;
+  list: Observable<Componente[]>;
   //#endregion Variables
 
   constructor(private dataService: DataService) {}
 
   ngOnInit() {
-		this.componentes = this.dataService.getMenuOptions()
+		this.list = this.dataService.getMenuOptions()
 	}
 }
