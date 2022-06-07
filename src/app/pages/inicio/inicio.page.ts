@@ -1,5 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import { MenuController } from "@ionic/angular";
+import { Observable } from 'rxjs';
 
 import { Componente } from "../../interfaces/interfaces";
 import { DataService } from "../../services/data.service";
