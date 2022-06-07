@@ -28,7 +28,7 @@ export class InicioPage implements OnInit {
     { icon: "hammer", label: "input - forms", routerlink: "/input" },
     { icon: "list", label: "list sliding", routerlink: "/list" },
     { icon: "move", label: "list reorder", routerlink: "/reorder" },
-    { icon: "circle-refresh", label: "loading", routerlink: "/loading" },
+    { icon: "refresh-circle", label: "loading", routerlink: "/loading" },
   ];
   //#endregion variables
   constructor() {}
