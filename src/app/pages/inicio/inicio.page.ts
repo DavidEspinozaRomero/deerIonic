@@ -1,6 +1,9 @@
 import { Component, OnInit } from "@angular/core";
 import { MenuController } from "@ionic/angular";
 
+import { Componente } from "../../interfaces/interfaces";
+import { DataService } from "../../services/data.service";
+
 @Component({
   selector: "app-inicio",
   templateUrl: "./inicio.page.html",
@@ -8,33 +11,13 @@ import { MenuController } from "@ionic/angular";
 })
 export class InicioPage implements OnInit {
   //#region variables
-  list: Componente[] = [
-    {
-      icon: "american-football",
-      label: "action sheet",
-      routerlink: "/action-sheet",
-    },
-    { icon: "alert-circle-outline", label: "alert", routerlink: "/alert" },
-    { icon: "beaker", label: "avatar", routerlink: "/avatar" },
-    { icon: "radio-button-on", label: "buttons", routerlink: "/buttons" },
-    { icon: "card", label: "card", routerlink: "/card" },
-    { icon: "calendar", label: "date time", routerlink: "/date-time" },
-    { icon: "car", label: "fab", routerlink: "/fab" },
-    { icon: "grid", label: "grid", routerlink: "/grid" },
-    {
-      icon: "infinite",
-      label: "infinite scroll",
-      routerlink: "/infinite-scroll",
-    },
-    { icon: "hammer", label: "input - forms", routerlink: "/input" },
-    { icon: "list", label: "list sliding", routerlink: "/list" },
-    { icon: "move", label: "list reorder", routerlink: "/reorder" },
-    { icon: "refresh-circle", label: "loading", routerlink: "/loading" },
-  ];
+  list: Componente[] = [];
   //#endregion variables
-  constructor(private menu: MenuController) {}
+  constructor(private menu: MenuController, private dataService: DataService) {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.componentes = this.dataService.getMenuOptions();
+  }
 
   //#region Methods
   toggleMenu() {
@@ -58,9 +41,5 @@ export class InicioPage implements OnInit {
 }
 
 //#region Interfaces
-interface Componente {
-  icon: string;
-  label: string;
-  routerlink: string;
-}
+
 //#endregion Interfaces
