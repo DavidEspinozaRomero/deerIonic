@@ -11,7 +11,7 @@ import { DataService } from "../../services/data.service";
 })
 export class InicioPage implements OnInit {
   //#region variables
-  list: Componente[] = [];
+  list: Observable<Componente[]>;
   //#endregion variables
   constructor(private menu: MenuController, private dataService: DataService) {}
 
