@@ -6,19 +6,13 @@
   </ion-header>
   <ion-content>
     <ion-list>
-      <ion-item
-        *ngFor="let item of list | async"
-        [routerLink]="item.routerlink"
-        detail
-      >
-        <ion-icon slot="start" [name]="item.icon"></ion-icon>
-        <ion-label>{{item.label}}</ion-label>
-      </ion-item>
+      <ion-menu-toggle *ngFor="let item of list | async">
+        <ion-item [routerLink]="item.routerlink" detail>
+          <ion-icon slot="start" [name]="item.icon"></ion-icon>
+          <ion-label>{{item.label}}</ion-label>
+        </ion-item>
+      </ion-menu-toggle>
     </ion-list>
-
-    <ion-menu-toggle>
-      <ion-button>Toggle Menu</ion-button>
-    </ion-menu-toggle>
   </ion-content>
 </ion-menu>
 
