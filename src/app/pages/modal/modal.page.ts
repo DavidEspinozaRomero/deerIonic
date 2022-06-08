@@ -18,9 +18,15 @@ export class ModalPage implements OnInit {
   async openModal() {
     const modal = await this.modalController.create({
       component: ModalInfoPage,
+      componentProps: { name: "David Espinoza", country: "Ecuador" },
+
       // cssClass: "my-custom-class",
     });
     return await modal.present();
+
+    const data = await modal.onDidDismiss();
+    console.log(data)
+
   }
 
   ngOnInit(): void {}

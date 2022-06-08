@@ -1,5 +1,6 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, OnInit, Input } from "@angular/core";
 import { ModalController } from "@ionic/angular";
+
 
 @Component({
   selector: "app-modal-info",
@@ -8,6 +9,8 @@ import { ModalController } from "@ionic/angular";
 })
 export class ModalInfoPage implements OnInit {
   //#region variables
+  @Input() name:string
+  @Input() country:string
   //#endregion variables
 
   constructor(public modalController: ModalController) {}
@@ -23,7 +26,7 @@ export class ModalInfoPage implements OnInit {
     this.modalController.dismiss()
   }
   whitProps(){
-    this.modalController.dismiss()
+    this.modalController.dismiss({confirm: true, estado: 'en proceso' })
   }
   //#endregion methods
 }
