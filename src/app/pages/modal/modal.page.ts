@@ -1,4 +1,6 @@
 import { Component, OnInit } from "@angular/core";
+import { ModalController } from "@ionic/angular";
+import { ModalInfoPage } from "../modal-info";
 
 @Component({
   selector: "app-modal",
@@ -7,12 +9,21 @@ import { Component, OnInit } from "@angular/core";
 })
 export class ModalPage implements OnInit {
   //#region variables
+  // The `ion-modal` element reference.
+  modal: HTMLElement;
   //#endregion variables
 
-  constructor() {}
+  constructor(public modalController: ModalController) {}
 
-  ngOnInit(): void {
+  async openModal() {
+    const modal = await this.modalController.create({
+      component: ModalInfoPage,
+      // cssClass: "my-custom-class",
+    });
+    return await modal.present();
   }
+
+  ngOnInit(): void {}
   //#region Apis
 
   //#endregion Apis
