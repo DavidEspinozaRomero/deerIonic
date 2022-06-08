@@ -18,7 +18,7 @@ export class ModalInfoPage implements OnInit {
   //#endregion Apis
 
   //#region methods
-
+  onClick(){}
   //#endregion methods
 }
 
