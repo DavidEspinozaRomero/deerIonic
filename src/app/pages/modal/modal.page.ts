@@ -24,9 +24,8 @@ export class ModalPage implements OnInit {
     });
     return await modal.present();
 
-    const data = await modal.onDidDismiss();
-    console.log(data)
-
+    const { data } = await modal.onDidDismiss();
+    console.log(data);
   }
 
   ngOnInit(): void {}
