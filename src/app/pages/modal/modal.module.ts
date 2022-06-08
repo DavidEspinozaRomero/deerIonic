@@ -3,17 +3,17 @@ import { CommonModule } from "@angular/common";
 
 import { IonicModule } from "@ionic/angular";
 
-import { LoadingPageRouting } from "./loading.routing";
+import { ModalPageRouting } from "./modal.routing";
 import { ComponentsModule } from "../../components/components.module";
-import { LoadingPage } from "./loading.page";
+import { ModalPage } from "./modal.page";
 
 @NgModule({
   imports: [
     CommonModule,
     IonicModule,
-    LoadingPageRouting,
+    ModalPageRouting,
     ComponentsModule,
   ],
-  declarations: [LoadingPage],
+  declarations: [ModalPage],
 })
-export class LoadingPageModule {}
+export class ModalPageModule {}
