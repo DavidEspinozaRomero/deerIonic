@@ -1,6 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import { ModalController } from "@ionic/angular";
-import { ModalInfoPage } from "../modal-info";
+import { ModalInfoPage } from "../modal-info/modal-info.page";
 
 @Component({
   selector: "app-modal",
