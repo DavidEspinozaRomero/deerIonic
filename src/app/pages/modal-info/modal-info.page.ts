@@ -1,4 +1,5 @@
 import { Component, OnInit } from "@angular/core";
+import { ModalController } from "@ionic/angular";
 
 @Component({
   selector: "app-modal-info",
@@ -9,7 +10,7 @@ export class ModalInfoPage implements OnInit {
   //#region variables
   //#endregion variables
 
-  constructor() {}
+  constructor(public modalController: ModalController) {}
 
   ngOnInit(): void {
   }
@@ -18,7 +19,12 @@ export class ModalInfoPage implements OnInit {
   //#endregion Apis
 
   //#region methods
-  onClick(){}
+  onClick(){
+    this.modalController.dismiss()
+  }
+  whitProps(){
+    this.modalController.dismiss()
+  }
   //#endregion methods
 }
 
