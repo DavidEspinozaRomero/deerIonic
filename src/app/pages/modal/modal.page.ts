@@ -15,6 +15,13 @@ export class ModalPage implements OnInit {
 
   constructor(public modalController: ModalController) {}
 
+  ngOnInit(): void {}
+  //#region Apis
+
+  //#endregion Apis
+
+  //#region methods
+
   async openModal() {
     const modal = await this.modalController.create({
       component: ModalInfoPage,
@@ -27,14 +34,6 @@ export class ModalPage implements OnInit {
     const { data } = await modal.onWillDismiss();
     console.log(data);
   }
-
-  ngOnInit(): void {}
-  //#region Apis
-
-  //#endregion Apis
-
-  //#region methods
-
   //#endregion methods
 }
 

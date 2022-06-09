@@ -95,6 +95,11 @@ const routes: Routes = [
     loadChildren: () =>
       import("./pages/modal/modal.module").then((m) => m.ModalPageModule),
   },
+  {
+    path: "popover",
+    loadChildren: () =>
+      import("./pages/modal/modal.module").then((m) => m.ModalPageModule),
+  },
 ];
 
 @NgModule({
