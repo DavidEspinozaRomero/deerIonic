@@ -5,10 +5,11 @@ import { IonicModule } from "@ionic/angular";
 
 import { HeaderComponent } from "./header/header.component";
 import { MenuComponent } from "./menu/menu.component";
+import { PopInfoComponent } from "./pop-info/pop-info.component";
 
 @NgModule({
-  exports: [HeaderComponent, MenuComponent],
-  declarations: [HeaderComponent, MenuComponent],
+  exports: [HeaderComponent, MenuComponent, PopInfoComponent],
+  declarations: [HeaderComponent, MenuComponent, PopInfoComponent],
   imports: [CommonModule, IonicModule, RouterModule],
   providers: [],
 })
