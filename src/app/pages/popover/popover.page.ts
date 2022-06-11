@@ -1,6 +1,6 @@
 import { Component, OnInit } from "@angular/core";
-import { ModalController } from "@ionic/angular";
-import { ModalInfoPage } from "../modal-info/modal-info.page";
+import { PopoverController } from '@ionic/angular';
+import { PopInfoComponent } from "../../components/pop-info/pop-info.component";
 
 @Component({
   selector: "app-popover",
@@ -13,7 +13,7 @@ export class PopoverPage implements OnInit {
   popover: HTMLElement;
   //#endregion variables
 
-  constructor() {}
+  constructor(public popoverController: PopoverController) {}
 
   ngOnInit(): void {}
   //#region Apis
@@ -21,7 +21,18 @@ export class PopoverPage implements OnInit {
   //#endregion Apis
 
   //#region methods
+  async showPop(ev: any) {
+    const popover = await this.popoverController.create({
+      component: PopInfoComponent,
+      // cssClass: "my-custom-class",
+      event: ev,
+      translucent: true,
+    });
+    await popover.present();
 
+    const { role } = await popover.onDidDismiss();
+    console.log("onDidDismiss resolved with role", role);
+  }
   //#endregion methods
 }
 
