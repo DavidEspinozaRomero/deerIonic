@@ -98,7 +98,7 @@ const routes: Routes = [
   {
     path: "popover",
     loadChildren: () =>
-      import("./pages/modal/modal.module").then((m) => m.ModalPageModule),
+      import("./pages/popover/popover.module").then((m) => m.PopoverPageModule),
   },
 ];
 
