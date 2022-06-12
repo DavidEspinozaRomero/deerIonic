@@ -21,5 +21,6 @@
   { "icon": "move", "label": "list reorder", "routerlink": "/reorder" },
   { "icon": "refresh-circle", "label": "loading", "routerlink": "/loading" },
   { "icon": "phone-portrait", "label": "modal", "routerlink": "/modal" },
-  { "icon": "tablet-portrait", "label": "popover", "routerlink": "/popover" }
+  { "icon": "tablet-portrait", "label": "popover", "routerlink": "/popover" },
+  { "icon": "bar", "label": "progress-bar", "routerlink": "/progress-bar" }
 ]
