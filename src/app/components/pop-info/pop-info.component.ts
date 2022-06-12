@@ -21,7 +21,7 @@ export class PopInfoComponent implements OnInit {
   onClick(index: number) {
     console.log("item", index + 1);
     this.popoverController.dismiss({
-      data: { item: index + 1 },
+      item: index + 1,
     });
   }
   //#endregion Methods
