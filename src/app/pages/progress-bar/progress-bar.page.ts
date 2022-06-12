@@ -21,7 +21,9 @@ export class ProgressBarPage implements OnInit {
 
   //#region methods
   public customFormatter(value: number) {
-    this.porcent = value * 0.01;
+    console.log(value);
+    
+    // this.porcent = value * 0.01;
     return `${value}%`;
   }
 
