@@ -1,5 +1,5 @@
 import { Component, OnInit } from "@angular/core";
-import { PopoverController } from '@ionic/angular';
+import { PopoverController } from "@ionic/angular";
 import { PopInfoComponent } from "../../components/pop-info/pop-info.component";
 
 @Component({
@@ -9,6 +9,7 @@ import { PopInfoComponent } from "../../components/pop-info/pop-info.component";
 })
 export class ProgressBarPage implements OnInit {
   //#region variables
+  porcent: number = 0.25;
   //#endregion variables
 
   constructor() {}
@@ -19,7 +20,9 @@ export class ProgressBarPage implements OnInit {
   //#endregion Apis
 
   //#region methods
-
+  rangeChange(event: any) {
+    console.log(event);
+  }
   //#endregion methods
 }
 
