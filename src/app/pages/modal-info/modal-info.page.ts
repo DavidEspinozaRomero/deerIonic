@@ -26,7 +26,7 @@ export class ModalInfoPage implements OnInit {
     this.modalController.dismiss()
   }
   whitProps(){
-    this.modalController.dismiss({'confirm': true, 'estado': 'en proceso' })
+    this.modalController.dismiss({confirm: true, estado: 'en proceso' })
   }
   //#endregion methods
 }

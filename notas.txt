@@ -1,1 +1,3 @@
 https://randomuser.me/api/portraits/women/55.jpg
+
+tanto el modal como el popover revizar la data del input como output
