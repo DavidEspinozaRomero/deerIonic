@@ -26,6 +26,8 @@ export class PopoverPage implements OnInit {
       component: PopInfoComponent,
       // cssClass: "my-custom-class",
       event: ev,
+      mode: 'ios',
+      backdropDismiss: false,
       translucent: true,
     });
     await popover.present();

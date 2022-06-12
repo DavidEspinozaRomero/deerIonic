@@ -1,3 +1,7 @@
-<ion-content>
-  <h1>pop!!</h1>
-</ion-content>
+<ion-list>
+  <ion-item *ngFor="let item of list; let i = index"
+  detail
+  (click)="onClick(i)">
+    <ion-label>Item {{i+1}}</ion-label>
+  </ion-item>
+</ion-list>
