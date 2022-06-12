@@ -103,7 +103,9 @@ const routes: Routes = [
   {
     path: "progress-bar",
     loadChildren: () =>
-      import("./pages/progress-bar/progress-bar.module").then((m) => m.PopoverPageModule),
+      import("./pages/progress-bar/progress-bar.module").then(
+        (m) => m.ProgressBarPageModule
+      ),
   },
 ];
 
