@@ -2,8 +2,11 @@
 
 <ion-content>
     <ion-progress-bar [value]="porcent"></ion-progress-bar>
+		<ion-item>
+			<ion-range color="danger" min="0" max="100" [pinFormatter]="customFormatter" [pin]="true"></ion-range>
+		</ion-item>
 
-		<ion-list>
+		<!-- <ion-list>
 			<ion-item>
 				<ion-range color="danger" [pin]="true"></ion-range>
 			</ion-item>
@@ -37,7 +40,7 @@
 			<ion-item>
 				<ion-range min="0" max="100" [pinFormatter]="customFormatter" [pin]="true"></ion-range>
 			</ion-item>
-		</ion-list>
+		</ion-list> -->
 		<div>snipets</div>
 		<ion-progress-bar type="determinate" value="0.42" buffer="0.5" reversed="true" color="primary"></ion-progress-bar>
 </ion-content>
