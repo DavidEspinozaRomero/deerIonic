@@ -3,6 +3,15 @@
 <ion-content>
     <ion-progress-bar ></ion-progress-bar>
 
+		<ion-range
+			min="0" max="100"
+			dualKnobs="true" pin="true"
+			snaps="true" step="1"
+			ticks="true" value="0"
+			color="primary"
+			(ionChange)="rangeChange($event)">
+		</ion-range>
+
 		<div>snipets</div>
-		<ion-progress type="determinate" value="0.42" buffer="0.5" reversed="true" color="primary"></ion-progress>
+		<ion-progress-bar type="determinate" value="0.42" buffer="0.5" reversed="true" color="primary"></ion-progress-bar>
 </ion-content>
