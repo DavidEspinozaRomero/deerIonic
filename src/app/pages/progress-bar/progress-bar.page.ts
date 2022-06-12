@@ -28,7 +28,7 @@ export class ProgressBarPage implements OnInit {
 
   rangeChange(event: any) {
     console.log(event.detail.value);
-    // this.porcent = (value / 100) | 0;
+    this.porcent = (value / 100);
   }
   //#endregion methods
 }
