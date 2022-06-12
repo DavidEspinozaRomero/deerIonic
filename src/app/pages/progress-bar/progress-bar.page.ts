@@ -9,7 +9,7 @@ import { PopInfoComponent } from "../../components/pop-info/pop-info.component";
 })
 export class ProgressBarPage implements OnInit {
   //#region variables
-  porcent: number = 0;
+  porcent: number = 0.05;
   //#endregion variables
 
   constructor() {}
@@ -20,7 +20,7 @@ export class ProgressBarPage implements OnInit {
   //#endregion Apis
 
   //#region methods
-  public customFormatter(value: number = 0) {
+  public customFormatter(value: number) {
     // console.log(value);
     // this.porcent = (value / 100) | 0;
     return `${value}%`;
