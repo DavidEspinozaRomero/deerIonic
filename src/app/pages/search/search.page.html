@@ -1,5 +1,22 @@
-<app-header title="Search"></app-header>
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Search Bar</ion-title>
+  </ion-toolbar>
+  <ion-searchbar
+    (ionChange)="onSearchChange($event)"
+    [debounce]="250"
+    showCancelButton="always"
+  ></ion-searchbar>
+</ion-header>
 
 <ion-content>
-  <ion-searchbar placeholder="Filter Pizza" (ionChange)="onSearchChange($event)" [debounce]="250" showCancelButton="always"></ion-searchbar>
+  <ion-searchbar
+    placeholder="Filter Pizza"
+    (ionChange)="onSearchChange($event)"
+    [debounce]="250"
+    showCancelButton="always"
+  ></ion-searchbar>
 </ion-content>
