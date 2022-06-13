@@ -23,10 +23,7 @@ export class RangePage implements OnInit {
     return `${value}%`;
   }
 
-  rangeChange(event: any) {
-    // console.log(event.detail.value);
-    this.porcent = (event.detail.value / 100);
-  }
+
   //#endregion methods
 }
 
