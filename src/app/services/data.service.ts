@@ -16,6 +16,11 @@ export class DataService {
     // });
   }
 
+  getAlbums() {
+    const URL: string = "https://jsonplaceholder.typicode.com/albums";
+    return this.http.get(URL);
+  }
+
   getMenuOptions() {
     const URL: string = "/assets/data/menu.json";
     return this.http.get<Componente[]>(URL);

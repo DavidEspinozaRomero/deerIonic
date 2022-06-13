@@ -1,4 +1,5 @@
 import { Component, OnInit } from "@angular/core";
+import { DataService } from "../../services/data.service";
 
 @Component({
   selector: "app-search",
@@ -10,15 +11,19 @@ export class SearchPage implements OnInit {
   items: any[] = [];
   //#endregion variables
 
-  constructor() {}
-
-  ngOnInit(): void {}
+  constructor(private _dataService:DataService) {}
+  ngOnInit(): void {
+    this.items = this._dataService.getAlbums()
+  }
   //#region Apis
 
   //#endregion Apis
 
   //#region methods
-  onSearchChange(event){}
+  onSearchChange(event:any){
+    console.log(event);
+    
+  }
   //#endregion methods
 }
 
