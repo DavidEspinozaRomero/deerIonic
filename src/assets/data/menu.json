@@ -23,5 +23,5 @@
   { "icon": "phone-portrait", "label": "modal", "routerlink": "/modal" },
   { "icon": "tablet-portrait", "label": "popover", "routerlink": "/popover" },
   { "icon": "code-working-outline", "label": "progress-bar", "routerlink": "/progress-bar" },
-  { "icon": "range", "label": "progress-bar", "routerlink": "/progress-bar" }
+  { "icon": "range", "label": "range", "routerlink": "/range" }
 ]

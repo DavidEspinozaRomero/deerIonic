@@ -107,6 +107,11 @@ const routes: Routes = [
         (m) => m.ProgressBarPageModule
       ),
   },
+  {
+    path: "range",
+    loadChildren: () =>
+      import("./pages/range/range.module").then((m) => m.RangePageModule),
+  },
 ];
 
 @NgModule({
