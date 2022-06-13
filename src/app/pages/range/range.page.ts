@@ -3,13 +3,12 @@ import { PopoverController } from "@ionic/angular";
 import { PopInfoComponent } from "../../components/pop-info/pop-info.component";
 
 @Component({
-  selector: "app-progress-bar",
-  templateUrl: "./progress-bar.page.html",
-  styleUrls: ["./progress-bar.page.scss"],
+  selector: "app-range",
+  templateUrl: "./range.page.html",
+  styleUrls: ["./range.page.scss"],
 })
-export class ProgressBarPage implements OnInit {
+export class RangePage implements OnInit {
   //#region variables
-  porcent: number = 0.05;
   //#endregion variables
 
   constructor() {}
