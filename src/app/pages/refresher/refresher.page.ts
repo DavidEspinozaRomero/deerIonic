@@ -7,6 +7,7 @@ import { Component, OnInit } from "@angular/core";
 })
 export class RefresherPage implements OnInit {
   //#region variables
+  items: any[] = [];
   //#endregion variables
 
   constructor() {}
@@ -22,6 +23,8 @@ export class RefresherPage implements OnInit {
 
     setTimeout(() => {
       console.log("Async operation has ended");
+      const arr = Array(20);
+      this.items = arr;
       event.target.complete();
     }, 2000);
   }
