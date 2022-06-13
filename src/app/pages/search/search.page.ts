@@ -1,5 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import { DataService } from "../../services/data.service";
+import { Observable } from "rxjs";
 
 @Component({
   selector: "app-search",
@@ -8,21 +9,20 @@ import { DataService } from "../../services/data.service";
 })
 export class SearchPage implements OnInit {
   //#region variables
-  items: any[] = [];
+  items: Observable;
   //#endregion variables
 
-  constructor(private _dataService:DataService) {}
+  constructor(private _dataService: DataService) {}
   ngOnInit(): void {
-    this.items = this._dataService.getAlbums()
+    this.items = this._dataService.getAlbums();
   }
   //#region Apis
 
   //#endregion Apis
 
   //#region methods
-  onSearchChange(event:any){
+  onSearchChange(event: any) {
     console.log(event);
-    
   }
   //#endregion methods
 }
