@@ -1,0 +1,5 @@
+<app-header title="Search"></app-header>
+
+<ion-content>
+  <ion-searchbar placeholder="Filter Pizza" (ionChange)="onSearchChange($event)" [debounce]="250" showCancelButton="always"></ion-searchbar>
+</ion-content>
