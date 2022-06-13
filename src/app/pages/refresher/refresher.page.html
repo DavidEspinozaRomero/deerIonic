@@ -4,9 +4,9 @@
   <ion-refresher slot="fixed" (ionRefresh)="doRefresh($event)">
     <ion-refresher-content></ion-refresher-content>
   </ion-refresher>
-  <h1 *ngIf=" !items">pull to refresh</h1>
+  <h1 *ngIf="!items.length">pull to refresh</h1>
 
-  <ion-list>
+  <ion-list *ngIf="items.length" class="animate__animated animate__fadeIn">
     <ion-item *ngFor="let item of items; let i=index">
       <ion-label>item {{i+1}} </ion-label>
     </ion-item>
