@@ -1,6 +1,4 @@
 import { Component, OnInit } from "@angular/core";
-import { PopoverController } from "@ionic/angular";
-import { PopInfoComponent } from "../../components/pop-info/pop-info.component";
 
 @Component({
   selector: "app-range",

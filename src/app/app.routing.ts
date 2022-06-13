@@ -112,6 +112,11 @@ const routes: Routes = [
     loadChildren: () =>
       import("./pages/range/range.module").then((m) => m.RangePageModule),
   },
+  {
+    path: "refresher",
+    loadChildren: () =>
+      import("./pages/refresher/refresher.module").then((m) => m.RefresherPageModule),
+  },
 ];
 
 @NgModule({
