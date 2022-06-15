@@ -10,7 +10,7 @@ import { Observable } from "rxjs";
 export class SearchPage implements OnInit {
   //#region variables
   items: Observable<any>;
-  text: string = "";
+  text: string;
   //#endregion variables
 
   constructor(private _dataService: DataService) {}
