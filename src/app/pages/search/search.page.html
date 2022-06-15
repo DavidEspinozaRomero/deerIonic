@@ -7,14 +7,14 @@
   </ion-toolbar>
   <ion-searchbar
     (ionChange)="onSearchChange($event)"
-    [debounce]="250"
+    [debounce]="300"
     showCancelButton="always"
   ></ion-searchbar>
 </ion-header>
 
 <ion-content>
   <ion-list>
-    <ion-item *ngFor="let item of items | async; let i=index">
+    <ion-item *ngFor="let item of items | async | filterText: text ; let i=index">
       <ion-label> {{item.title}} </ion-label>
     </ion-item>
   </ion-list>
