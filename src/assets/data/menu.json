@@ -25,5 +25,6 @@
   { "icon": "code-working-outline", "label": "progress-bar", "routerlink": "/progress-bar" },
   { "icon": "options-outline", "label": "range", "routerlink": "/range" },
   { "icon": "arrow-down-circle", "label": "refresher", "routerlink": "/refresher" },
-  { "icon": "search", "label": "search", "routerlink": "/search" }
+  { "icon": "search", "label": "search", "routerlink": "/search" },
+  { "icon": "copy", "label": "segment", "routerlink": "/segment" }
 ]

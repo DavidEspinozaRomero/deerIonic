@@ -8,6 +8,5 @@ export class FilterTextPipe implements PipeTransform {
     }
     text = text.toLowerCase();
     return value.filter((item) => item[column].toLowerCase().includes(text));
-    // return '';
   }
 }
