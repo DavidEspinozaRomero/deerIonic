@@ -13,6 +13,7 @@ import { AppComponent } from "./app.component";
 
 import { ComponentsModule } from "./components/components.module";
 import { AppRouting } from "./app.routing";
+import { PipesModule } from "./pipes/pipes.module";
 
 @NgModule({
   declarations: [AppComponent],
@@ -23,6 +24,7 @@ import { AppRouting } from "./app.routing";
     IonicModule.forRoot(),
     AppRouting,
     ComponentsModule,
+    PipesModule
   ],
   providers: [
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },

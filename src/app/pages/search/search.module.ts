@@ -5,8 +5,8 @@ import { IonicModule } from "@ionic/angular";
 
 import { SearchPageRouting } from "./search.routing";
 import { ComponentsModule } from "../../components/components.module";
+import { PipesModule } from "../../pipes/pipes.module";
 import { SearchPage } from "./search.page";
-import { FilterTextPipe } from "../../pipes/filter-text.pipe";
 
 @NgModule({
   imports: [
@@ -14,7 +14,7 @@ import { FilterTextPipe } from "../../pipes/filter-text.pipe";
     IonicModule,
     SearchPageRouting,
     ComponentsModule,
-    FilterTextPipe,
+    PipesModule,
   ],
   declarations: [SearchPage],
 })
